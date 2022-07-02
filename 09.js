@@ -11,7 +11,11 @@ function intercambio(objeto) {
   // NOTA: No utilizar métodos de Object (values, keys, entries);
   //
   // Tu código:
-
+    const resultado = {}
+      for(let clave in objeto){
+        resultado[objeto[clave]] = clave
+    }
+    return resultado;
 };
 
 // No modifiques nada debajo de esta linea //

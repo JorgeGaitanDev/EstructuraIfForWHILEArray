@@ -22,8 +22,28 @@ function ingredienteEnMalEstado(menu, comida, ingrediente) {
   // NOTA: No utilizar el método "includes".
   //
   // Tu código:
+  var nueArray = [];
+  const ingredientes = menu[comida];
 
+  if (ingredientes && ingredientes.length) {
+    for (var i = 0; i < ingredientes.length; i++) {
+      if (ingredientes[i] === ingrediente) {
+        if (i === 0) {
+          nueArray.push(ingredientes[i]);
+          nueArray.push(ingredientes[i + 1]);
+        }else if (i === ingredientes.length - 1) {
+          nueArray.push(ingredientes[i - 1]);
+          nueArray.push(ingredientes[i]);
+        }else {
+          nueArray.push(ingredientes[i - 1]);
+          nueArray.push(ingredientes[i]);
+          nueArray.push(ingredientes[i + 1]);
+        }break;
+      }
+    }
+  }return nueArray.length ? nueArray : "El menú está perfecto";
 };
+
 
 
 // No modifiques nada debajo de esta linea //

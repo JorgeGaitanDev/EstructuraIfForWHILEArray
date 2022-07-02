@@ -17,8 +17,14 @@ function obtenerSoloLosMejores(estudiantes, nota1, nota2) {
   // obtenerSoloLosMejores(estudiantes, 15, 15); retorna => ["Fulanito Rodriguez", "Perengano Leiria"];
   //
   // Tu código:
-  
+       let mejores = estudiantes
+        .filter(e => e.check1 >= nota1 && e.check2 >= nota2)
+        .map(e => `${e.nombre} ${e.apellido}`);
+          return mejores;
 };
+
+
+
 
 // No modifiques nada debajo de esta linea //
 

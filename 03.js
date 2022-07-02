@@ -22,8 +22,8 @@ function bienvenidoSr(persona) {
   // "Disculpe señor, no está invitado a la fiesta".
   //
   // Tu código:
-
-};
+  
+}  
 
 // No modifiques nada debajo de esta linea //
 

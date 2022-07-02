@@ -9,7 +9,17 @@ function mayorMenosMenor(arr) {
   // NOTA: No utilizar los métodos "min" y "max" de "Math".
   //
   // Tu código:
-
+  var may = arr[0];
+  var men = arr[0];
+  var resultado = 0;
+  for (var i = 0; i < arr.length; i++) {
+    if (arr[i] > may) {
+      may = arr[i];
+    }
+    if (arr[i] < men) {
+      men = arr[i];
+    }
+  } return resultado = may - men;
 };
 
 // No modifiques nada debajo de esta linea //
